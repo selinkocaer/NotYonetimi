@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Not Yönetim Sistemi</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="app">
+            <header>
+                <h1>Not Yönetim Sistemi</h1>
+            </header>
+
+            <section class="note-form">
+                <h2>Yeni Not Ekle</h2>
+                <input type="text" id="noteInput" placeholder="Bir not ekle..." />
+                <button id="addNoteBtn">Ekle</button>
+            </section>
+
+            <section class="search-section">
+                <input type="text" id="searchInput" placeholder="Notlarda ara..." />
+            </section>
+
+            <section id="notesContainer">
+                <div class="notes-list">
+                    <h2>Tamamlanmamış Notlar</h2>
+                    <ul id="incompleteNotes"></ul>
+                </div>
+                <div class="notes-list">
+                    <h2>Tamamlanmış Notlar</h2>
+                    <ul id="completedNotes"></ul>
+                </div>
+            </section>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
